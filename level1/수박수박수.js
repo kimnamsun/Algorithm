@@ -1,7 +1,7 @@
 function solution(n) {
     var answer = '';
-    for(let i = 1; i<=n; i++){
-      answer = (i % 2 === 0) ? answer += '박' : answer += '수';
+    for(let i=0; i<n; i++){
+      answer = (i % 2 === 0) ? answer += '수' : answer += '박';
   }
     return answer;
 }
