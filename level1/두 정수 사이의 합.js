@@ -1,15 +1,22 @@
-//다시 풀어보기
 function solution(a, b) {
-  
-    let arr = [];
-    let answer = 0;
-    
-    (a > b) ? arr = ([...Array(a+1).keys()].slice(b))
-            : arr = ([...Array(b+1).keys()].slice(a));
-    
-    for (let i in arr) {
-      answer += arr[i];
-    }
-      
-      return answer;
+
+  let temp = '';
+  let answer = 0;
+
+  if (a > b) {
+    temp = a;
+    a = b;
+    b = temp;
   }
+
+  for (let i = a; i <= b; i++) {
+    answer += i;
+  }
+
+  return answer;
+}
+
+//방법2
+function solution(a, b) {
+  return (a + b) * (Math.abs(a - b)+1) / 2;
+}

@@ -1,9 +1,14 @@
 function solution(s) {
     const len = s.length;
-    var answer = false;
-  
-    if( (len === 4 || len === 6) && (/^[0-9]/g).test(s)) {
-       answer = true;
-    } 
-    return answer;
+
+    if ((s.split("").every((num) => !isNaN(num)))
+        && (len === 4 || len === 6)) {
+        return true;
+    }
+    return false;
+}
+
+//방법2 정규표현식 사용
+function solution(s) {
+    return /^\d{6}$|^\d{4}$/.test(s) ? true : false;
 }
