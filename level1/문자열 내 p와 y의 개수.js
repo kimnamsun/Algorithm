@@ -2,7 +2,6 @@ function solution(s) {
 
     let pCnt = 0;
     let yCnt = 0;
-    let answer = true;
 
     let arrayOfWords = s.toLowerCase().split('').filter((word) => {
         if (word === 'p') {
@@ -12,5 +11,5 @@ function solution(s) {
         }
     });
 
-    return pCnt !== yCnt ? false : answer;
+    return pCnt === yCnt;
 }

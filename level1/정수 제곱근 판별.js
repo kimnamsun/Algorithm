@@ -11,3 +11,9 @@ function solution(n) {
 
     return answer;
 }
+
+//방법2
+function solution(n) {
+    let sqrt = Math.sqrt(n);
+    return Number.isInteger(sqrt) ? (sqrt + 1) ** 2 : -1;
+}

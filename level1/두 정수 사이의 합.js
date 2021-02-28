@@ -1,13 +1,8 @@
 function solution(a, b) {
 
-  let temp = '';
   let answer = 0;
 
-  if (a > b) {
-    temp = a;
-    a = b;
-    b = temp;
-  }
+  a > b && ([a, b] = [b, a]);
 
   for (let i = a; i <= b; i++) {
     answer += i;
@@ -18,5 +13,5 @@ function solution(a, b) {
 
 //방법2
 function solution(a, b) {
-  return (a + b) * (Math.abs(a - b)+1) / 2;
+  return (a + b) * (Math.abs(a - b) + 1) / 2;
 }

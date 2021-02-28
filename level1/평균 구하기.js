@@ -4,6 +4,10 @@ function solution(arr) {
   for (let i in arr) {
     answer += arr[i];
   }
-  answer = answer / arr.length;
-  return answer;
+  return answer / arr.length;;
+}
+
+//방법2
+function solution(arr) {
+  return arr.reduce((a, b) => (a + b)) / arr.length;
 }

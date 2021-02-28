@@ -8,3 +8,8 @@ function solution(arr) {
   }
   return answer;
 }
+
+//방법2
+function solution(arr) {
+  return arr.filter( (num, idx) => (num !== arr[idx+1]));
+}
