@@ -1,5 +1,5 @@
 function solution(x, n) {
-    var answer = [];
+    const answer = [];
     let a = x;
 
     for (let i = 0; i < n; i++) {
@@ -12,7 +12,7 @@ function solution(x, n) {
 
 //방법2
 function solution(x, n) {
-    var answer = [];
+    const answer = [];
 
     for (let i = 1; i <= n; i++) {
         answer.push(i * x);

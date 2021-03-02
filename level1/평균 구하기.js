@@ -1,5 +1,5 @@
 function solution(arr) {
-  var answer = 0;
+  let answer = 0;
 
   for (let i in arr) {
     answer += arr[i];

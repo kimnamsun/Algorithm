@@ -1,6 +1,6 @@
 function solution(n) {
 
-    let arr = Array(n + 1).fill(true);
+    const arr = Array(n + 1).fill(true);
     let cnt = 0;
 
     arr.splice(0, 2, false, false);

@@ -1,5 +1,5 @@
 function solution(x) {
-  var answer = true;
+  let answer = true;
   const arr = Array.from(String(x), Number).reduce((i, j) => i + j);
 
   if (x % arr > 0) {
