@@ -5,6 +5,6 @@ function solution(x) {
 
 //방법2
 function solution(x) {
-  const arr = x.toString().split("").map((num) => Number(num)).reduce((i, j) => i + j);
+  const arr = x.toString().split('').map((num) => Number(num)).reduce((i, j) => i + j);
   return x % arr === 0;
 }

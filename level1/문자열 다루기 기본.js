@@ -1,5 +1,5 @@
 function solution(s) {
-    if (s.split("").every((num) => !isNaN(num))
+    if (s.split('').every((num) => !isNaN(num))
         && [4, 6].includes(s.length)) {
         return true;
     }

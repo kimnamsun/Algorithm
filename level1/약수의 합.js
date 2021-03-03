@@ -8,3 +8,10 @@ function solution(n) {
     }
     return answer;
 }
+
+//방법2
+function solution(n) {
+    return [...Array(n).keys()].map((v) => v + 1)
+        .filter((num) => (n % num === 0))
+        .reduce((prev, current) => (prev += current))
+}
