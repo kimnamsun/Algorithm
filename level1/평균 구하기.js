@@ -4,7 +4,7 @@ function solution(arr) {
   for (let i in arr) {
     answer += arr[i];
   }
-  return answer / arr.length;;
+  return answer / arr.length;
 }
 
 //방법2

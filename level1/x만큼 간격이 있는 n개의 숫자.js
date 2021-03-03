@@ -2,9 +2,9 @@ function solution(x, n) {
     const answer = [];
     let a = x;
 
-    for (let i = 0; i < n; i++) {
+    for (let i = 1; i <= n; i++) {
         answer.push(a);
-        a = x + a;
+        a += x;
     }
     return answer;
 }
