@@ -8,7 +8,6 @@ function solution(s) {
 }
 
 //방법3
-
 function solution(s) {
     return parseInt(s);
 }
