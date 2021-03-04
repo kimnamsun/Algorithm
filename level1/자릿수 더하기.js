@@ -6,5 +6,5 @@ function solution(n) {
 
 //방법2
 function solution(n) {
-    return Array.from(String(n), Number).reduce((prev, current) => (prev += current))
+    return Array.from(String(n), Number).reduce((i, j) => (i += j))
 }

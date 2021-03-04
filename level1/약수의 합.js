@@ -13,5 +13,5 @@ function solution(n) {
 function solution(n) {
     return [...Array(n).keys()].map((v) => v + 1)
         .filter((num) => (n % num === 0))
-        .reduce((prev, current) => (prev += current))
+        .reduce((i, j) => (i += j))
 }
