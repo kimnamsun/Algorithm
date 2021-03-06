@@ -1,10 +1,8 @@
 function solution(n) {
-    let answer = n.toString().split('').map((num) => num * 1).reverse();
-    return answer;
+    return n.toString().split('').map((num) => num * 1).reverse();
 }
 
 //방법2
 function solution(n) {
-    let answer = Array.from(String(n), Number).reverse();
-    return answer;
+    return Array.from(String(n), Number).reverse();
 }
