@@ -1,5 +1,5 @@
 function solution(n) {
-    return n.toString().split('').map((num) => num * 1).reverse();
+    return n.toString().split('').map((num) => parseInt(num)).reverse();
 }
 
 //방법2
