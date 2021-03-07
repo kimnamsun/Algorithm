@@ -36,3 +36,5 @@ javascript Algorithm Study
      
   
 - [level2](https://github.com/kimnamsun/Algorithm/tree/master/level2)
+  - [올바른 괄호](https://github.com/kimnamsun/Algorithm/blob/master/level1/%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80%20%EB%AA%BB%ED%95%9C%20%EC%84%A0%EC%88%98.js)
+  - [최댓값과 최솟값](https://github.com/kimnamsun/Algorithm/blob/master/level1/%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80%20%EB%AA%BB%ED%95%9C%20%EC%84%A0%EC%88%98.js)
