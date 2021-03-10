@@ -1,14 +1,13 @@
 function solution(x, n) {
     const answer = [];
-    let a = x;
+    let gap = x;
 
     for (let i = 1; i <= n; i++) {
-        answer.push(a);
-        a += x;
+        answer.push(gap);
+        gap += x;
     }
     return answer;
 }
-
 
 //방법2
 function solution(x, n) {
@@ -18,4 +17,9 @@ function solution(x, n) {
         answer.push(i * x);
     }
     return answer;
+}
+
+//방법3
+function solution(x, n) {
+    return [...Array(n).keys()].map((num) => (num + 1) * x);
 }

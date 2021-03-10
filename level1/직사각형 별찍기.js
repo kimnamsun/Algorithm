@@ -12,3 +12,13 @@ process.stdin.on('data', data => {
   }
   console.log(star);
 });
+
+//방법2
+process.stdin.setEncoding('utf8');
+process.stdin.on('data', data => {
+  const n = data.split(' ');
+  const a = Number(n[0])
+  const b = Number(n[1]);
+  let star = '*'.repeat(a) + '\n';
+  console.log(star.repeat(b));
+});
