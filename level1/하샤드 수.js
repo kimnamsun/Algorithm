@@ -1,10 +1,10 @@
 function solution(x) {
-  const sum = Array.from(String(x), Number).reduce((i, j) => i + j);
-  return x % sum === 0;
+  const answer = Array.from(String(x), Number).reduce((sum, current) => sum + current);
+  return x % answer === 0;
 }
 
 //방법2
 function solution(x) {
-  const sum = x.toString().split('').map((num) => Number(num)).reduce((i, j) => i + j);
-  return x % sum === 0;
+  const answer = x.toString().split('').map((num) => Number(num)).reduce((sum, current) => sum + current);
+  return x % answer === 0;
 }

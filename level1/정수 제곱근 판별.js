@@ -18,5 +18,8 @@ function solution(n) {
     return Number.isInteger(sqrt) ? (sqrt + 1) ** 2 : -1;
 }
 
-// def solution(n):
-//     return ((n**0.5)+1)**2 if((n**0.5)%1==0) else -1
+//방법3
+function solution(n) {
+    const sqrt = n ** 0.5;
+    return sqrt % 1 === 0 ? (sqrt + 1) ** 2 : -1;
+}

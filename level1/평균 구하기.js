@@ -29,5 +29,5 @@ function solution(arr) {
 
 //방법4
 function solution(arr) {
-  return arr.reduce((i, j) => (i + j)) / arr.length;
+  return arr.reduce((sum, current) => (sum + current)) / arr.length;
 }
