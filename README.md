@@ -39,3 +39,4 @@ javascript Algorithm Study
   - [올바른 괄호](https://github.com/kimnamsun/Algorithm/blob/master/level2/%EC%98%AC%EB%B0%94%EB%A5%B8%20%EA%B4%84%ED%98%B8.js)
   - [최댓값과 최솟값](https://github.com/kimnamsun/Algorithm/blob/master/level2/%EC%B5%9C%EB%8C%93%EA%B0%92%EA%B3%BC%20%EC%B5%9C%EC%86%9F%EA%B0%92.js)
   - [다음 큰 숫자](https://github.com/kimnamsun/Algorithm/blob/master/level2/%EC%B5%9C%EB%8C%93%EA%B0%92%EA%B3%BC%20%EC%B5%9C%EC%86%9F%EA%B0%92.js)
+  - [가장 큰 수](https://github.com/kimnamsun/Algorithm/blob/master/level2/%EA%B0%80%EC%9E%A5%20%ED%81%B0%20%EC%88%98.js)
