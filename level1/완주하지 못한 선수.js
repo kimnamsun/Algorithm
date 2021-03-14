@@ -1,4 +1,3 @@
-
 function solution(participant, completion) {
     participant.sort();
     completion.sort();
