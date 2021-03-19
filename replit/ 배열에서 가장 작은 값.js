@@ -27,8 +27,7 @@ function findSmallestElement(arr) {
     return min;
 }
 
-//Math.min 이용
-//사실 한줄에 끝낼 수 있는 코드다...
+//사실 Math.min 이용하면 한줄에 끝낼 수 있는 코드지만.. 배운걸 써먹는데 의의를 두자..
 function findSmallestElement(arr) {
     // your code here
     return arr.length === 0 ? 0 : Math.min(...arr);
