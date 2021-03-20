@@ -1,10 +1,10 @@
 function getWesternAge(birthday) {
-    // let bDay = new Date(birthday);
+    let bDay = new Date(birthday);
     // 위 코드가 없으면 오류가 나는 코드.. qna 세션 때 물어보기!
 
     let now = new Date();
 
-    //일단 올해 년도에서 생일 년도 빼서 나이를 구한다음에
+    //일단 올해 년도에서 생일 년도 빼서 나이를 구한 다음에
     let age = now.getFullYear() - birthday.getFullYear();
 
     //birthday의 년도를 올해로 변경 후 생년월일이 지났는지 비교하기
@@ -46,8 +46,8 @@ function getWesternAge(birthday) {
 
         //이번 달과 생일의 달이 같은 경우 date의 차를 판단한다!!
     } else if (month === 0) {
-        // age = date > 0 ? age : age--; 와 같은 코드
-        age = date < 0 || age--;
+        // age = date < 0 || age--; 가독성이 안좋아서 다시 밑의 코드로 수정
+        age = date > 0 ? age : age--;
     }
 
     return age;

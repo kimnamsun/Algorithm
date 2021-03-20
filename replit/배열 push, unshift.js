@@ -1,11 +1,7 @@
 function divideArrayInHalf(array) {
     let result = [];
     for (let i = array.length - 1; i >= 0; i--) {
-        if (array[i] <= 10) {
-            result.unshift(array[i]);
-        } else {
-            result.push(array[i]);
-        }
+        array[i] <= 10 ? result.unshift(array[i]) : result.push(array[i]);
     }
     return result;
 }

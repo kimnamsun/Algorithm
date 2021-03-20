@@ -8,8 +8,8 @@
 
 const moreThan100 = nums => {
     nums.map((num, idx) => {
-        // nums[idx] = num >= 100 ? true : false;
-        nums[idx] = (num >= 100);
+        nums[idx] = num >= 100 ? true : false;
+        // nums[idx] = (num >= 100);
     });
 
     return nums;
