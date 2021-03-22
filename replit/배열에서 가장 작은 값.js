@@ -38,9 +38,7 @@ function findSmallestElement(arr) {
     return min;
 }
 
-
 //사실 Math.min 이용하면 한줄에 끝낼 수 있는 코드지만.. 로직을 짜는 것에 의의두기
 function findSmallestElement(arr) {
-    // your code here
     return arr.length === 0 ? 0 : Math.min(...arr);
 }
