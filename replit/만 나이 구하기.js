@@ -53,4 +53,3 @@ function getWesternAge(birthday) {
     return age;
 
 }
-
