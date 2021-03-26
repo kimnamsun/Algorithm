@@ -8,15 +8,13 @@
 
 const moreThan100 = nums => {
     nums.map((num, idx) => {
-        nums[idx] = num >= 100 ? true : false;
-        // nums[idx] = (num >= 100);
+        // nums[idx] = num >= 100 ? true : false;
+        nums[idx] = (num >= 100);
     });
-
     return nums;
 }
 
 const formatDate = dates => {
-
     dates.map((date, idx) => {
         let year = date.split('-')[0];
         let month = date.split('-')[1];

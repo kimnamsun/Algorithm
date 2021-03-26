@@ -35,17 +35,17 @@ const handleEdit = (nickname, interests) => {
 // 삽질로 날려버린 1시간..! 오늘의 교훈. 문제를 잘읽자
 // const handleEdit = (nickname, interests) => {
 
-//     const bioFunction = (interests) =>  {
-//     let bioInterests = interests.split(', ').join(',');
-//        return `제 닉네임은 ${nickname}입니다. 취미는 ${bioInterests}입니다.` 
+//     const bioFunction = (interests) => {
+//         let bioInterests = interests.split(', ').join(',');
+//         return `제 닉네임은 ${nickname}입니다. 취미는 ${bioInterests}입니다.`
 //     }
 
-//    const user = {
-//         nickname:nickname,
-//         interests:interests.split(', '),
-//         bio:bioFunction(interests)
+//     const user = {
+//         nickname: nickname,
+//         interests: interests.split(', '),
+//         bio: bioFunction(interests)
 //     }
 
-//   return user;
+//     return user;
 // }
 
