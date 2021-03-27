@@ -1,5 +1,4 @@
 const getExamResult = (scores, requiredClasses) => {
-
     const result = {};
     const grade = {
         'A+': 4.5,
@@ -16,7 +15,6 @@ const getExamResult = (scores, requiredClasses) => {
     requiredClasses.forEach((score) => {
         result[score] = (scores[score] === undefined) && 0;
     });
-
 
     for (let i in scores) {
         const score = scores[i];
