@@ -11,16 +11,16 @@ const romanToNum = (s) => {
     M: 1000
   };
 
-  let newStr = 0;
+  let result = 0;
 
   for (let i = 0; i < arr.length; i++) {
     if (roman[arr[i]] < roman[arr[i + 1]]) {
-      newStr += (roman[arr[i + 1]] - roman[arr[i]]);
+      result += (roman[arr[i + 1]] - roman[arr[i]]);
       i++;
     } else {
-      newStr += roman[arr[i]];
+      result += roman[arr[i]];
     }
   }
-  return newStr;
+  return result;
 }
 romanToNum("MCMXCIX");
