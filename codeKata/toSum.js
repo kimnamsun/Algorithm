@@ -1,10 +1,10 @@
 const plus = (nums, target) => {
-    let arr = [];
-    nums.reduce((prev, current) => {
-        if ((prev + current) === target) {
-            arr = [nums.indexOf(prev), nums.indexOf(current)];
-        }
-    });
+  let arr = [];
+  nums.reduce((prev, current) => {
+    if ((prev + current) === target) {
+      arr = [nums.indexOf(prev), nums.indexOf(current)];
+    }
+  });
 }
 
 plus([4, 9, 11, 14], 13);
@@ -14,13 +14,13 @@ plus([4, 9, 11, 14], 13);
 
 //방법2
 const plus = (nums, target) => {
-    for (let i in nums) {
-        for (let j in nums) {
-            if (nums[i] + nums[j] === target) {
-                return [Number(i), Number(j)];
-            }
-        }
+  for (let i in nums) {
+    for (let j in nums) {
+      if (nums[i] + nums[j] === target) {
+        return [Number(i), Number(j)];
+      }
     }
+  }
 }
 
 //for문 두번쓰는거 말고는 방법이 없을까..?
@@ -29,23 +29,23 @@ plus([4, 9, 11, 14], 13);
 
 //코드카타 짝꿍이랑 푼 답안
 const twoSum = (nums, target) => {
-    // 아래 코드를 작성해주세요.
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = 0; j < nums.length; j++) {
-            if (nums[i] + nums[j] === target) {
-                return [i, j];
-            }
-        }
+  // 아래 코드를 작성해주세요.
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = 0; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
     }
+  }
 }
 
 //for문 덜 돌면서 푼 로직
 const twoSum = (nums, target) => {
-    for (let i = 0; i < nums.length - 1; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
-            if (nums[i] + nums[j] === target) {
-                return [i, j];
-            }
-        }
+  for (let i = 0; i < nums.length - 1; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
     }
+  }
 }
