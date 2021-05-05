@@ -16,5 +16,5 @@ const moveZeroes = nums => {
       nums.splice(i, 1);
     }
   }
-  return nums
+  return nums;
 }

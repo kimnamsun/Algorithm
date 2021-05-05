@@ -5,7 +5,6 @@ const getLengthOfStr = str => {
   for (let i = 0; i < str.length; i++) {
     if (!arr.includes(str[i])) {
       arr.push(str[i]);
-
     }
   }
   return arr.length;
