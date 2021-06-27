@@ -1,16 +1,16 @@
 function solution(n) {
 
-    let answer = n + 1;
+  let answer = n + 1;
 
-    while (true) {
-        if (oneCnt(n) === oneCnt(answer)) {
-            break;
-        }
-        answer++;
+  while (true) {
+    if (oneCnt(n) === oneCnt(answer)) {
+      break;
     }
-    return answer;
+    answer++;
+  }
+  return answer;
 }
 
 function oneCnt(n) {
-    return n.toString(2).split('').filter((value) => value === "1").length;
+  return n.toString(2).split('').filter((value) => value === "1").length;
 }
